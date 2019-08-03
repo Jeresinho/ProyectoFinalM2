@@ -1,0 +1,348 @@
+@font-face{
+    font-family: 'Dancing';
+    src: url(../stylesheets/DancingScript-Regular.otf);
+}
+
+body, html{
+    background-color: #02010a;
+}
+
+@-webkit-keyframes AnimacionHeader{
+    0%{
+        margin-top: 150%;
+    }
+    60%{
+        margin-top: -5%;
+    }
+    100%{
+        margin-top: 0%;
+    }
+}
+header{
+    height: 10%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: #5b7989;
+    display: flex;
+    flex-direction: row;
+    animation: AnimacionHeader 2s;
+}
+
+header div{
+    width: 50%;
+}
+header h1{
+    font-family: 'Dancing';
+    font-size: 3vh;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+    margin-left: 2%;
+}
+
+.centrado{
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+}
+header nav{
+    font-family: 'Dancing';
+    font-size: 2vh;
+    word-spacing: 1vw;
+    width: 50%;
+    text-align: center;
+    margin:auto
+}
+header nav a{
+    color: white;
+}
+header nav a#Inicio{
+    text-decoration: none;
+}
+
+.Principal{
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden;
+}
+section div.Principal{
+    background-color: #82c3a6;
+}
+section div img#ImagenPrincipal{
+    display: block;
+    margin-top: 2vh;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2vh;
+    width: 55%;
+    box-shadow: 2px 2px 3px #02010a;
+}
+
+@-webkit-keyframes AnimacionPaisaje{
+    from{transform: rotate(0deg)}
+    to{transform: rotate(10deg)}
+}
+section div.paisajes img#Paisaje:hover{
+    animation: AnimacionPaisaje 2s;
+    box-shadow: 2px 2px 3px #82c3a6
+}
+
+@-webkit-keyframes AnimacionRetrato{
+    from{transform: translate(0px,0px)}
+    to{transform: translate(20px,-5px)}
+}
+section div.Retrato img#Retrato:hover{
+    animation: AnimacionRetrato 3s;
+    box-shadow: 2px 2px 3px #82c3a6
+}
+
+section div.paisajes{
+    width: 50%;
+    background-color: #D5c75f;
+}
+section div.Retrato{
+    width: 50%;
+    background-color: #D5c75f;
+}
+section div img#Paisaje{
+    width: 75%;
+    box-shadow: 2px 2px 3px #02010a;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2%;
+}
+section div.paisajes h2{
+    font-family: "Dancing";
+    text-decoration: underline;
+    font-size: 3vh;
+    text-align: center;
+}    
+section div img#Retrato{
+    width: 75%;
+    box-shadow: 2px 2px 3px #02010a;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2%
+}
+section div.Retrato h2{
+    font-family: "Dancing";
+    text-decoration: underline;
+    font-size: 3vh;
+    text-align: center;
+} 
+Section#Segundo{
+    width: 80%;
+    margin: auto;
+    max-width: 900px;
+    display: flex;
+    flex-direction: row;
+}
+
+footer{
+    width: 80%;
+    margin: auto;
+    max-width: 900px;
+    display: flex;
+    flex-direction: row;
+    background-color: #C6D5c5;
+    font-family: "Dancing";
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+footer div.contacto{
+    width: 25%;
+    text-align: center;
+}
+
+footer div.terminos{
+    width: 25%;
+    text-align: center;
+}
+
+footer div.redes{
+    width: 25%;
+    text-align: center;
+}
+footer div.redes img{
+    width: 7%;
+}
+
+footer div.derechos{
+    width: 25%;
+    text-align: center;
+}
+footer h2{
+    font-size: 3vh;
+}
+footer p{
+    font-size: 2vh;
+}
+
+@media (max-width:900px){
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    header div{
+        width: 100%;
+    }
+    header div h1{
+        text-align: center;
+    }
+    header nav{
+        width: 100%;
+        margin: auto;
+    }
+    Section#Segundo{
+        display: flex;
+        flex-direction: column;
+    }
+    section div.paisajes{
+        width: 100%;
+    }
+    section div.Retrato{
+        width: 100%;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        text-align: center
+    }
+    footer div.contacto{
+        width: 100%;
+    }
+    footer div.terminos{
+        width: 100%;
+    }
+    footer div.redes{
+        width: 100%;
+    }
+    footer div.derechos{
+        width: 100%;
+    }
+    main#MainPaisajes Section#Fila1, Main#MainPaisajes section#Fila2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    main#MainPaisajes Section#Fila1 div#AA{
+        width: 100%;
+    }
+    main#MainPaisajes Section#Fila1 div#AB{
+        width: 100%;
+    }
+    main#MainPaisajes Section#Fila1 div#AC{
+        width: 100%;
+    }
+    Main#MainPaisajes section#Fila2 div#BA{
+        width: 100%;
+    }
+    Main#MainPaisajes section#Fila2 div#BB{
+        width: 100%;
+    }
+    Main#MainPaisajes section#Fila2 div#BC{
+        width: 100%;
+    }
+}
+
+header nav a#paisajes{
+    text-decoration: none;
+}
+
+main#MainPaisajes{
+    width: 80%;
+    max-width: 900px;
+    background-color: #D5c75f;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+section#Fila1,section#Fila2{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+div#AA,div#AB,div#AC,div#BA,div#BB,div#BC{
+    width: 33.33%;
+}
+div#AA img.AA{
+    width: 80%;
+    margin: auto;
+    box-shadow: 2px 2px 3px #02010a;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+}
+div#AB img.AB{
+    width: 80%;
+    margin: auto;
+    box-shadow: 2px 2px 3px #02010a;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+div#AC img.AC{
+    width: 80%;
+    margin: auto;
+    box-shadow: 2px 2px 3px #02010a;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    -webkit-filter: sepia(90%);
+    filter: sepia(90%)
+}
+div#BA img.BA{
+    width: 80%;
+    margin: auto;
+    box-shadow: 2px 2px 3px #02010a;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+div#BB img.BB{
+    width: 80%;
+    margin: auto;
+    box-shadow: 2px 2px 3px #02010a;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+div#BC img.BC{
+    width: 80%;
+    margin: auto;
+    box-shadow: 2px 2px 3px #02010a;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+img.AA,img.AB,img.AC,img.BA,img.BB,img.BC{
+    width: 200px;
+}
+
+header nav a#retratos{
+    text-decoration: none;
+}
